@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta http-equiv="Content-Security-Policy" 
+    content="
+      worker-src blob:; 
+      child-src blob: gap:;
+      img-src 'self' blob: data:;
+      default-src * 'self' 'unsafe-inline' 'unsafe-eval' data: gap: content:">
+    <link href="./styles.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="topBar">NFTKit pre-alpha 🤣</div>
+    <div class="mainContainer">
+      <div class="leftPanel">
+          <select class="DropDown" id="DropDown">
+            <option value="No Collection Selected"></option>
+          </select>
+          <div class="navMenu">
+            <p class="navMenuHead" id="collectionLabel">No Collection Selected</p>
+            <p class="traitsBtn navMenuBtn">Traits</p>
+            <p class="curateBtn navMenuBtn">Curate</p>
+            <p class="raritiesBtn navMenuBtn">Rarities</p>
+            <p class="metadataBtn navMenuBtn">Metadata</p>
+            <p class="trashBtn navMenuBtn">Trash</p>
+          </div>
+          <div class="filterMenu" id="filterMenu">
+
+          </div>
+          <div class="filterReset">
+            <p id="filterResetBtn">Reset Filters</p>
+          </div>
+      </div>
+      <div class="midPanel" id="midPanel">
+
+      </div>
+    </div>
+    <script src="./renderer.js"></script>
+  </body>
+</html>

@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: Poppins, sans-serif;
+}
+img {
+  max-width: 150px;
+  border-radius: 5px;
+  margin: 10px;
+}
+pre code {
+  max-width: 150px;
+}
+body {
+  overflow: hidden;
+}
+.mainContainer {
+  width: 100vw;
+  height: 100vh;
+  background-color: #0d0d0d;
+  overflow: "hidden";
+  display: flex;
+}
+.topBar {
+  background-color: #0d0d0d;
+  height: 5vh;
+  width: 100vw;
+  text-align: center;
+  -webkit-app-region: drag;
+}
+.leftPanel {
+  width: 30vw;
+  overflow: "hidden";
+}
+.filterMenu {
+  overflow-y: scroll;
+  height: 50vh;
+}
+.traitGroup {
+  color: #ddd;
+  font-size: 16px;
+}
+.traitItem {
+  color: #888;
+  font-size: 12px;
+}
+.midPanel {
+  height: 100vh;
+  width: 70vw;
+  overflow-y: scroll;
+  padding-right: 5vw;
+}
+.midPanel::-webkit-scrollbar {
+  display: none;
+}
+.DropDown {
+  padding: 5px;
+  border-radius: 4px;
+  color: #ffffff;
+  background-color: #1e1e1e;
+  font-weight: 500;
+  size: 15px;
+}
+.navMenu {
+  text-align: center;
+  padding-right: 15%;
+}
+
+.navMenuHead {
+  color: #fff;
+  text-align: left;
+}
+
+.navMenuBtn:hover {
+  opacity: 0.5;
+}
