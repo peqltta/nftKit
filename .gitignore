@@ -1,2 +1,5 @@
 node_modules
 data/Collections/*
+nftKit-win32-x64
+*.zip
+package-lock.json

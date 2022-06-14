@@ -37,13 +37,36 @@ body {
   overflow-y: scroll;
   height: 50vh;
 }
+.filterMenu::-webkit-scrollbar {
+  display: none;
+}
 .traitGroup {
   color: #ddd;
   font-size: 16px;
 }
-.traitItem {
+.traitBtn {
+  color: #fff;
+  pointer-events: fill;
+  cursor: crosshair;
+}
+#deleteBtn {
+  border: 2px solid white;
+  width: 20px;
+  text-align: center;
+}
+.importCollection {
+  border: 2px solid white;
+  width: 20px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.traitItems {
   color: #888;
+  display: none;
+  pointer-events: fill;
   font-size: 12px;
+  cursor: crosshair;
 }
 .midPanel {
   height: 100vh;
